@@ -1,0 +1,61 @@
+body,html{
+    display: flex;
+    justify-content: center;
+
+}
+
+#container{
+    width: 1000px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+h1{
+    font-family: monospace;
+    color: hotpink;
+    font-size: 50px;
+}
+
+header, nav, section, footer{
+    border: 1px solid grey;
+    width: 100%;
+}
+
+header{
+    height: 130px;
+}
+
+nav{
+    text-align: center;
+}
+
+.nav-list{
+    list-style: none;
+    display: inline;
+    text-align: center;
+}
+
+.btn:link{
+    width: 300px;
+    text-decoration: none;
+    height: 50px;
+    border:1px solid blue;
+    color:black;
+    background-color: aquamarine;
+}
+.btn:visited{
+    color: black;
+}
+.btn:hover{
+    background-color: blueviolet;
+}
+#nav-list-links{
+   
+}
+
+footer{
+    text-align: center;
+    font-family: monospace;
+    color: hotpink;
+    background-color: blueviolet;
+}
