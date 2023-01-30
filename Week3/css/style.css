@@ -1,19 +1,32 @@
+@font-face {
+    font-family: customHeaderFont;
+    src: url(../fonts/HelloSunshine.otf);
+}
+
 body,html{
     display: flex;
     justify-content: center;
-
+    margin: 30px;
+    background-color: blueviolet;
+    background-image: url("../images/moroccan-flower-dark.webp");
 }
+/*
+font-family: 'Aboreto', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Solitreo', cursive;
 
+*/
 #container{
     width: 1000px;
     padding: 10px;
     border: 1px solid black;
+    background-color: blueviolet;
 }
 
 h1{
-    font-family: monospace;
+    font-family: customHeaderFont, cursive;
     color: hotpink;
-    font-size: 50px;
+    font-size: 70px;
 }
 
 header, nav, section, footer{
@@ -42,6 +55,8 @@ nav{
     border:1px solid blue;
     color:black;
     background-color: aquamarine;
+    padding: 5px;
+    margin-left: 10px;
 }
 .btn:visited{
     color: black;
@@ -58,4 +73,17 @@ footer{
     font-family: monospace;
     color: hotpink;
     background-color: blueviolet;
+}
+
+.section-text{
+    font-family: 'Comfortaa', cursive;
+}
+
+#section-header{
+    font-family: 'Solitreo', cursive;
+}
+
+section{
+    padding: 10px;
+    width:980px;
 }
