@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+        table,tr,td{
+            border: outset ;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+        }
+        tbody td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table Example</h1>
+    <!--First start with table element-->
+    <table>
+        <thead>
+            <!--Defines table row-->
+            <tr>
+                <!--Defines Columns table data-->
+                <td>Year</td>
+                <td>Make</td>
+                <td>Model</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2011</td>
+                <td>Volkswagen</td>
+                <td>Jetta</td>
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td>BMW</td>
+                <td>M4</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td>Porsche</td>
+                <td>GT3</td>
+            </tr>
+            <tr>
+                <td>2018</td>
+                <td>Honda</td>
+                <td>Accord</td>
+            </tr>
+            <tr>
+                <td>1965</td>
+                <td>Cheverolet</td>
+                <td>Impala</td>
+            </tr>
+            <tr>
+                <td>1999</td>
+                <td>Toyota</td>
+                <td>Supra Mk6</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <form action="tables.html" method="GET">
+                <tr>
+                    <td>Select your favorite car</td>
+                </tr>
+                <tr>
+                    <td><label for="car">Select your favorite here!</label></td>
+                    <td>
+                        <input type="radio" name="Car" value="2011 Volkswagen Jetta">2011 Volkswagen Jetta<br>
+                        <input type="radio" name="Car" value="2015 BMW M4">2014 BMW M4<br>
+                        <input type="radio" name="Car" value="2016 Porche GT3">2016 Porche GT3<br>
+                        <input type="radio" name="Car" value="2018 Honda Accord">2018 Honda Accord<br>
+                        <input type="radio" name="Car" value="1965 Cheverolet Impala">1965 Cheverolet Impala<br>
+                        <input type="radio" name="Car" value="1999 Toyota Supra">1999 Toyota Supra<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Username">Enter your name here</label></td>
+                    <td>
+                        <input type="text" name="firstname" placeholder="Enter first name" id="firstname" required>
+                        <input type="text" name="lastname" placeholder="Enter last name" id="lastname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Email">Enter email here</label>
+                    </td>
+                    <td>
+                        <input type="email" name="Email" id="email" placeholder="Enter Email here">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="submit">Click to send your choice</label>
+                    </td>
+                    <td>
+                        <input type="submit" value="Submit Form">
+                    </td>
+                </tr>
+
+            </form>
+        </tfoot>
+    </table>
+</body>
+</html>
