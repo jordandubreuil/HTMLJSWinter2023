@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Form Data</title>
+
+</head>
+
+<body>
+    <h1>Form Data Here:</h1>
+</body>
+<script>
+    document.onload() = function () {
+        //JavaScript Goes here
+        var queryData = window.location.search;
+        console.log(queryData);
+
+        var urlParams = new URLSearchParams(queryData);
+
+        entries = urlParams.entries();
+        var body = document.querySelector("body");
+
+        for (var entry of entries) {
+            var p = document.createElement("p");
+            console.log(`${entry[0]}: ${entry[1]}`);
+
+            p.innerHTML = `${entry[0]}: ${entry[1]}`;
+            body.appendChild(p);
+
+        }
+    }
+
+
+</script>
+
+</html>
